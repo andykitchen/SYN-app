@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class AudioStreamer;
+
 @interface SYNViewController : UIViewController {
-    
+    AudioStreamer *streamer;
 }
-
-
 
 @end

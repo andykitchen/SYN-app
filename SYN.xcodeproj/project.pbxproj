@@ -20,6 +20,10 @@
 		A1B008DC1335CCCA000D9043 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008DA1335CCCA000D9043 /* UIDevice+Hardware.m */; };
 		A1B008E01335CD2E000D9043 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008DF1335CD2E000D9043 /* AudioToolbox.framework */; };
 		A1B008E21335CD3F000D9043 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008E11335CD3F000D9043 /* CFNetwork.framework */; };
+		A1B009031335DD32000D9043 /* Synradio.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A1B008FF1335DD32000D9043 /* Synradio.jpeg */; };
+		A1B009041335DD32000D9043 /* Synradio@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A1B009001335DD32000D9043 /* Synradio@2x.jpeg */; };
+		A1B009071335DF56000D9043 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B009051335DF56000D9043 /* Icon.png */; };
+		A1B009081335DF56000D9043 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B009061335DF56000D9043 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		A1B008DA1335CCCA000D9043 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		A1B008DF1335CD2E000D9043 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A1B008E11335CD3F000D9043 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A1B008FF1335DD32000D9043 /* Synradio.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Synradio.jpeg; sourceTree = "<group>"; };
+		A1B009001335DD32000D9043 /* Synradio@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Synradio@2x.jpeg"; sourceTree = "<group>"; };
+		A1B009051335DF56000D9043 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A1B009061335DF56000D9043 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 				A1B008CC1335CBF7000D9043 /* SYNViewController.h */,
 				A1B008CD1335CBF7000D9043 /* SYNViewController.m */,
 				A1B008CF1335CBF7000D9043 /* SYNViewController.xib */,
+				A1B008FC1335DD32000D9043 /* Media */,
 				A1B008BE1335CBF7000D9043 /* Supporting Files */,
 			);
 			path = SYN;
@@ -117,6 +126,17 @@
 				A1B008C41335CBF7000D9043 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1B008FC1335DD32000D9043 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A1B009051335DF56000D9043 /* Icon.png */,
+				A1B009061335DF56000D9043 /* Icon@2x.png */,
+				A1B008FF1335DD32000D9043 /* Synradio.jpeg */,
+				A1B009001335DD32000D9043 /* Synradio@2x.jpeg */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +192,10 @@
 				A1B008C21335CBF7000D9043 /* InfoPlist.strings in Resources */,
 				A1B008CB1335CBF7000D9043 /* MainWindow.xib in Resources */,
 				A1B008D11335CBF7000D9043 /* SYNViewController.xib in Resources */,
+				A1B009031335DD32000D9043 /* Synradio.jpeg in Resources */,
+				A1B009041335DD32000D9043 /* Synradio@2x.jpeg in Resources */,
+				A1B009071335DF56000D9043 /* Icon.png in Resources */,
+				A1B009081335DF56000D9043 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
