@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B71335CBF7000D9043 /* UIKit.framework */; };
+		A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B91335CBF7000D9043 /* Foundation.framework */; };
+		A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */; };
+		A1B008C21335CBF7000D9043 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B008C01335CBF7000D9043 /* InfoPlist.strings */; };
+		A1B008C51335CBF7000D9043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008C41335CBF7000D9043 /* main.m */; };
+		A1B008C81335CBF7000D9043 /* SYNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008C71335CBF7000D9043 /* SYNAppDelegate.m */; };
+		A1B008CB1335CBF7000D9043 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B008C91335CBF7000D9043 /* MainWindow.xib */; };
+		A1B008CE1335CBF7000D9043 /* SYNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008CD1335CBF7000D9043 /* SYNViewController.m */; };
+		A1B008D11335CBF7000D9043 /* SYNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B008CF1335CBF7000D9043 /* SYNViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B008B31335CBF7000D9043 /* SYN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B008B71335CBF7000D9043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1B008B91335CBF7000D9043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1B008BF1335CBF7000D9043 /* SYN-Info.plist */ = {isa = PBXFileReference; path = "SYN-Info.plist"; sourceTree = "<group>"; };
+		A1B008C11335CBF7000D9043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1B008C31335CBF7000D9043 /* SYN-Prefix.pch */ = {isa = PBXFileReference; path = "SYN-Prefix.pch"; sourceTree = "<group>"; };
+		A1B008C41335CBF7000D9043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1B008C61335CBF7000D9043 /* SYNAppDelegate.h */ = {isa = PBXFileReference; path = SYNAppDelegate.h; sourceTree = "<group>"; };
+		A1B008C71335CBF7000D9043 /* SYNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNAppDelegate.m; sourceTree = "<group>"; };
+		A1B008CA1335CBF7000D9043 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A1B008CC1335CBF7000D9043 /* SYNViewController.h */ = {isa = PBXFileReference; path = SYNViewController.h; sourceTree = "<group>"; };
+		A1B008CD1335CBF7000D9043 /* SYNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNViewController.m; sourceTree = "<group>"; };
+		A1B008D01335CBF7000D9043 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYNViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B008B01335CBF7000D9043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */,
+				A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */,
+				A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B008A81335CBF7000D9043 = {
+			isa = PBXGroup;
+			children = (
+				A1B008BD1335CBF7000D9043 /* SYN */,
+				A1B008B61335CBF7000D9043 /* Frameworks */,
+				A1B008B41335CBF7000D9043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B008B41335CBF7000D9043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B008B31335CBF7000D9043 /* SYN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B008B61335CBF7000D9043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B008B71335CBF7000D9043 /* UIKit.framework */,
+				A1B008B91335CBF7000D9043 /* Foundation.framework */,
+				A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B008BD1335CBF7000D9043 /* SYN */ = {
+			isa = PBXGroup;
+			children = (
+				A1B008C61335CBF7000D9043 /* SYNAppDelegate.h */,
+				A1B008C71335CBF7000D9043 /* SYNAppDelegate.m */,
+				A1B008C91335CBF7000D9043 /* MainWindow.xib */,
+				A1B008CC1335CBF7000D9043 /* SYNViewController.h */,
+				A1B008CD1335CBF7000D9043 /* SYNViewController.m */,
+				A1B008CF1335CBF7000D9043 /* SYNViewController.xib */,
+				A1B008BE1335CBF7000D9043 /* Supporting Files */,
+			);
+			path = SYN;
+			sourceTree = "<group>";
+		};
+		A1B008BE1335CBF7000D9043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1B008BF1335CBF7000D9043 /* SYN-Info.plist */,
+				A1B008C01335CBF7000D9043 /* InfoPlist.strings */,
+				A1B008C31335CBF7000D9043 /* SYN-Prefix.pch */,
+				A1B008C41335CBF7000D9043 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B008B21335CBF7000D9043 /* SYN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B008D41335CBF7000D9043 /* Build configuration list for PBXNativeTarget "SYN" */;
+			buildPhases = (
+				A1B008AF1335CBF7000D9043 /* Sources */,
+				A1B008B01335CBF7000D9043 /* Frameworks */,
+				A1B008B11335CBF7000D9043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYN;
+			productName = SYN;
+			productReference = A1B008B31335CBF7000D9043 /* SYN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B008AA1335CBF7000D9043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = GoodCode;
+			};
+			buildConfigurationList = A1B008AD1335CBF7000D9043 /* Build configuration list for PBXProject "SYN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1B008A81335CBF7000D9043;
+			productRefGroup = A1B008B41335CBF7000D9043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B008B21335CBF7000D9043 /* SYN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B008B11335CBF7000D9043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B008C21335CBF7000D9043 /* InfoPlist.strings in Resources */,
+				A1B008CB1335CBF7000D9043 /* MainWindow.xib in Resources */,
+				A1B008D11335CBF7000D9043 /* SYNViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B008AF1335CBF7000D9043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B008C51335CBF7000D9043 /* main.m in Sources */,
+				A1B008C81335CBF7000D9043 /* SYNAppDelegate.m in Sources */,
+				A1B008CE1335CBF7000D9043 /* SYNViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1B008C01335CBF7000D9043 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B008C11335CBF7000D9043 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1B008C91335CBF7000D9043 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B008CA1335CBF7000D9043 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A1B008CF1335CBF7000D9043 /* SYNViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B008D01335CBF7000D9043 /* en */,
+			);
+			name = SYNViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1B008D21335CBF7000D9043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1B008D31335CBF7000D9043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		A1B008D51335CBF7000D9043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SYN/SYN-Prefix.pch";
+				INFOPLIST_FILE = "SYN/SYN-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1B008D61335CBF7000D9043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SYN/SYN-Prefix.pch";
+				INFOPLIST_FILE = "SYN/SYN-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B008AD1335CBF7000D9043 /* Build configuration list for PBXProject "SYN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B008D21335CBF7000D9043 /* Debug */,
+				A1B008D31335CBF7000D9043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B008D41335CBF7000D9043 /* Build configuration list for PBXNativeTarget "SYN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B008D51335CBF7000D9043 /* Debug */,
+				A1B008D61335CBF7000D9043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B008AA1335CBF7000D9043 /* Project object */;
+}
