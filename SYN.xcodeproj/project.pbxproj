@@ -16,6 +16,10 @@
 		A1B008CB1335CBF7000D9043 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B008C91335CBF7000D9043 /* MainWindow.xib */; };
 		A1B008CE1335CBF7000D9043 /* SYNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008CD1335CBF7000D9043 /* SYNViewController.m */; };
 		A1B008D11335CBF7000D9043 /* SYNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B008CF1335CBF7000D9043 /* SYNViewController.xib */; };
+		A1B008DB1335CCCA000D9043 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008D81335CCCA000D9043 /* AudioStreamer.m */; };
+		A1B008DC1335CCCA000D9043 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B008DA1335CCCA000D9043 /* UIDevice+Hardware.m */; };
+		A1B008E01335CD2E000D9043 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008DF1335CD2E000D9043 /* AudioToolbox.framework */; };
+		A1B008E21335CD3F000D9043 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008E11335CD3F000D9043 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,22 @@
 		A1B008B71335CBF7000D9043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1B008B91335CBF7000D9043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A1B008BF1335CBF7000D9043 /* SYN-Info.plist */ = {isa = PBXFileReference; path = "SYN-Info.plist"; sourceTree = "<group>"; };
+		A1B008BF1335CBF7000D9043 /* SYN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SYN-Info.plist"; sourceTree = "<group>"; };
 		A1B008C11335CBF7000D9043 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A1B008C31335CBF7000D9043 /* SYN-Prefix.pch */ = {isa = PBXFileReference; path = "SYN-Prefix.pch"; sourceTree = "<group>"; };
+		A1B008C31335CBF7000D9043 /* SYN-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SYN-Prefix.pch"; sourceTree = "<group>"; };
 		A1B008C41335CBF7000D9043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A1B008C61335CBF7000D9043 /* SYNAppDelegate.h */ = {isa = PBXFileReference; path = SYNAppDelegate.h; sourceTree = "<group>"; };
+		A1B008C61335CBF7000D9043 /* SYNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYNAppDelegate.h; sourceTree = "<group>"; };
 		A1B008C71335CBF7000D9043 /* SYNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNAppDelegate.m; sourceTree = "<group>"; };
 		A1B008CA1335CBF7000D9043 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A1B008CC1335CBF7000D9043 /* SYNViewController.h */ = {isa = PBXFileReference; path = SYNViewController.h; sourceTree = "<group>"; };
+		A1B008CC1335CBF7000D9043 /* SYNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYNViewController.h; sourceTree = "<group>"; };
 		A1B008CD1335CBF7000D9043 /* SYNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNViewController.m; sourceTree = "<group>"; };
 		A1B008D01335CBF7000D9043 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYNViewController.xib; sourceTree = "<group>"; };
+		A1B008D71335CCCA000D9043 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		A1B008D81335CCCA000D9043 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		A1B008D91335CCCA000D9043 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		A1B008DA1335CCCA000D9043 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		A1B008DF1335CD2E000D9043 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A1B008E11335CD3F000D9043 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,8 @@
 				A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */,
 				A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */,
 				A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */,
+				A1B008E01335CD2E000D9043 /* AudioToolbox.framework in Frameworks */,
+				A1B008E21335CD3F000D9043 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +81,10 @@
 		A1B008B61335CBF7000D9043 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A1B008B71335CBF7000D9043 /* UIKit.framework */,
 				A1B008B91335CBF7000D9043 /* Foundation.framework */,
+				A1B008B71335CBF7000D9043 /* UIKit.framework */,
+				A1B008E11335CD3F000D9043 /* CFNetwork.framework */,
+				A1B008DF1335CD2E000D9043 /* AudioToolbox.framework */,
 				A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
@@ -81,6 +95,8 @@
 			children = (
 				A1B008C61335CBF7000D9043 /* SYNAppDelegate.h */,
 				A1B008C71335CBF7000D9043 /* SYNAppDelegate.m */,
+				A1B008D71335CCCA000D9043 /* AudioStreamer.h */,
+				A1B008D81335CCCA000D9043 /* AudioStreamer.m */,
 				A1B008C91335CBF7000D9043 /* MainWindow.xib */,
 				A1B008CC1335CBF7000D9043 /* SYNViewController.h */,
 				A1B008CD1335CBF7000D9043 /* SYNViewController.m */,
@@ -93,6 +109,8 @@
 		A1B008BE1335CBF7000D9043 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1B008D91335CCCA000D9043 /* UIDevice+Hardware.h */,
+				A1B008DA1335CCCA000D9043 /* UIDevice+Hardware.m */,
 				A1B008BF1335CBF7000D9043 /* SYN-Info.plist */,
 				A1B008C01335CBF7000D9043 /* InfoPlist.strings */,
 				A1B008C31335CBF7000D9043 /* SYN-Prefix.pch */,
@@ -167,6 +185,8 @@
 				A1B008C51335CBF7000D9043 /* main.m in Sources */,
 				A1B008C81335CBF7000D9043 /* SYNAppDelegate.m in Sources */,
 				A1B008CE1335CBF7000D9043 /* SYNViewController.m in Sources */,
+				A1B008DB1335CCCA000D9043 /* AudioStreamer.m in Sources */,
+				A1B008DC1335CCCA000D9043 /* UIDevice+Hardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +257,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SYN/SYN-Prefix.pch";
@@ -251,6 +275,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SYN/SYN-Prefix.pch";
 				INFOPLIST_FILE = "SYN/SYN-Info.plist";
