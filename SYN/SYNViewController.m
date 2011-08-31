@@ -11,11 +11,8 @@
 #import "AudioStreamer.h"
 
 @implementation SYNViewController
+@synthesize statusLabel;
 
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -25,10 +22,30 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - Actions and Events
+#pragma mark - Actions, Events, Notifications
 
-- (void)play {
-    [streamer start];
+- (IBAction)togglePlayPause
+{
+    [streamer pause];
+}
+
+- (IBAction)sendStudioMessage
+{
+    SYNMessageViewController *messageViewController =
+        [[SYNMessageViewController alloc] 
+         initWithNibName:@"SYNMessageViewController" bundle:nil];
+
+    UINavigationController *navigationController =
+        [[UINavigationController alloc]
+            initWithRootViewController:messageViewController];
+
+    navigationController.navigationBar.tintColor = [UIColor redColor];
+    messageViewController.delegate = self;
+    
+    [self presentModalViewController:navigationController animated:YES];
+
+    [messageViewController release];
+    [navigationController release];
 }
 
 - (void)remoteControlReceivedWithEvent:(UIEvent*)event
@@ -36,7 +53,7 @@
     if (event.type == UIEventTypeRemoteControl) {
         switch (event.subtype) {
             case UIEventSubtypeRemoteControlTogglePlayPause:
-                [streamer pause];
+                [self togglePlayPause];
                 break;
                 
             default:
@@ -44,6 +61,34 @@
         }
     }   
 }
+
+- (void)playbackStateChanged:(NSNotification*)notification
+{
+    if ([streamer isWaiting]) {
+        self.statusLabel.text = @"Connecting...";
+	}
+	else if ([streamer isPlaying]) {
+        self.statusLabel.text = @"Playing...";
+	}
+	else if ([streamer isPaused]) {
+        self.statusLabel.text = @"Paused...";
+	}
+	else if ([streamer isIdle]) {
+        self.statusLabel.text = @"Idle...";
+	}
+}
+
+- (void)cancelMessage
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+     
+ - (void)sendMessage:(NSString *)message
+{
+    NSLog(@"%@", message);
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 
 #pragma mark - View lifecycle
 
@@ -56,18 +101,22 @@
 	streamer = [[AudioStreamer alloc] initWithURL:url];
     [url release];
     
-    [self play];
+    [streamer start];
+    
+    [[NSNotificationCenter defaultCenter]
+         addObserver:self
+         selector:@selector(playbackStateChanged:)
+         name:ASStatusChangedNotification
+         object:streamer];
+
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
 
-    UIApplication *application = [UIApplication sharedApplication];
-	if([application respondsToSelector:@selector(beginReceivingRemoteControlEvents)])
-		[application beginReceivingRemoteControlEvents];
-    
-	[self becomeFirstResponder];
+    [self becomeFirstResponder];    
 }
 
 - (BOOL)canBecomeFirstResponder
@@ -75,14 +124,26 @@
     return YES;
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self resignFirstResponder];
+}
+
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+ 
+    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+
+    [streamer release];
+
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     
-    [streamer release];
+    self.statusLabel = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

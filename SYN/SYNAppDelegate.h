@@ -11,11 +11,10 @@
 @class SYNViewController;
 
 @interface SYNAppDelegate : NSObject <UIApplicationDelegate> {
-
+    BOOL visible;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
 @property (nonatomic, retain) IBOutlet SYNViewController *viewController;
 
 @end

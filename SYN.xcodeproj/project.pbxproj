@@ -24,6 +24,9 @@
 		A1B009041335DD32000D9043 /* Synradio@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A1B009001335DD32000D9043 /* Synradio@2x.jpeg */; };
 		A1B009071335DF56000D9043 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B009051335DF56000D9043 /* Icon.png */; };
 		A1B009081335DF56000D9043 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B009061335DF56000D9043 /* Icon@2x.png */; };
+		A1EF9CD4133703AD002498A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EF9CD3133703AD002498A2 /* AVFoundation.framework */; };
+		A1F97822140DB222003E7DB8 /* SYNMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */; };
+		A1F97823140DB222003E7DB8 /* SYNMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F97821140DB222003E7DB8 /* SYNMessageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,10 @@
 		A1B009001335DD32000D9043 /* Synradio@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Synradio@2x.jpeg"; sourceTree = "<group>"; };
 		A1B009051335DF56000D9043 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		A1B009061335DF56000D9043 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A1EF9CD3133703AD002498A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A1F9781F140DB222003E7DB8 /* SYNMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNMessageViewController.h; sourceTree = "<group>"; };
+		A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNMessageViewController.m; sourceTree = "<group>"; };
+		A1F97821140DB222003E7DB8 /* SYNMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYNMessageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 				A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */,
 				A1B008E01335CD2E000D9043 /* AudioToolbox.framework in Frameworks */,
 				A1B008E21335CD3F000D9043 /* CFNetwork.framework in Frameworks */,
+				A1EF9CD4133703AD002498A2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 				A1B008E11335CD3F000D9043 /* CFNetwork.framework */,
 				A1B008DF1335CD2E000D9043 /* AudioToolbox.framework */,
 				A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */,
+				A1EF9CD3133703AD002498A2 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +118,9 @@
 				A1B008CC1335CBF7000D9043 /* SYNViewController.h */,
 				A1B008CD1335CBF7000D9043 /* SYNViewController.m */,
 				A1B008CF1335CBF7000D9043 /* SYNViewController.xib */,
+				A1F9781F140DB222003E7DB8 /* SYNMessageViewController.h */,
+				A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */,
+				A1F97821140DB222003E7DB8 /* SYNMessageViewController.xib */,
 				A1B008FC1335DD32000D9043 /* Media */,
 				A1B008BE1335CBF7000D9043 /* Supporting Files */,
 			);
@@ -196,6 +208,7 @@
 				A1B009041335DD32000D9043 /* Synradio@2x.jpeg in Resources */,
 				A1B009071335DF56000D9043 /* Icon.png in Resources */,
 				A1B009081335DF56000D9043 /* Icon@2x.png in Resources */,
+				A1F97823140DB222003E7DB8 /* SYNMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +224,7 @@
 				A1B008CE1335CBF7000D9043 /* SYNViewController.m in Sources */,
 				A1B008DB1335CCCA000D9043 /* AudioStreamer.m in Sources */,
 				A1B008DC1335CCCA000D9043 /* UIDevice+Hardware.m in Sources */,
+				A1F97822140DB222003E7DB8 /* SYNMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +345,7 @@
 				A1B008D61335CBF7000D9043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

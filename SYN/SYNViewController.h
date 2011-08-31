@@ -8,10 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SYNMessageViewController.h"
+
 @class AudioStreamer;
 
-@interface SYNViewController : UIViewController {
+@interface SYNViewController : UIViewController <SYNMessageDelegate> {
     AudioStreamer *streamer;
+    UILabel *statusLabel;
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *statusLabel;
+
+- (IBAction)togglePlayPause;
+
+- (void)cancelMessage;
+- (void)sendMessage:(NSString *)message;
 
 @end
