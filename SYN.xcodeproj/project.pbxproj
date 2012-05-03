@@ -15,8 +15,8 @@
 		3F231F3315525E0700AD1F1C /* pause_btn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F2D15525E0600AD1F1C /* pause_btn2.jpg */; };
 		3F231F3615525F0500AD1F1C /* playbtn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F3415525F0500AD1F1C /* playbtn2.jpg */; };
 		3F231F3715525F0500AD1F1C /* playbtn2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F3515525F0500AD1F1C /* playbtn2@2x.jpg */; };
-		3F231F3A155263E700AD1F1C /* sydapp_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F38155263E600AD1F1C /* sydapp_bg.jpg */; };
-		3F231F3B155263E700AD1F1C /* sydapp_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F39155263E600AD1F1C /* sydapp_bg@2x.jpg */; };
+		3F231F3E1552651F00AD1F1C /* sydapp_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F3C1552651F00AD1F1C /* sydapp_bg@2x.jpg */; };
+		3F231F3F1552651F00AD1F1C /* sydapp_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F3D1552651F00AD1F1C /* sydapp_bg.jpg */; };
 		A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B71335CBF7000D9043 /* UIKit.framework */; };
 		A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B91335CBF7000D9043 /* Foundation.framework */; };
 		A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */; };
@@ -47,8 +47,8 @@
 		3F231F2D15525E0600AD1F1C /* pause_btn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pause_btn2.jpg; path = ../../../../Desktop/synapp/images/pause_btn2.jpg; sourceTree = "<group>"; };
 		3F231F3415525F0500AD1F1C /* playbtn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = playbtn2.jpg; path = ../../../../Desktop/synapp/images/playbtn2.jpg; sourceTree = "<group>"; };
 		3F231F3515525F0500AD1F1C /* playbtn2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "playbtn2@2x.jpg"; path = "../../../../Desktop/synapp/images/playbtn2@2x.jpg"; sourceTree = "<group>"; };
-		3F231F38155263E600AD1F1C /* sydapp_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sydapp_bg.jpg; path = ../../../../Desktop/synapp/images/sydapp_bg.jpg; sourceTree = "<group>"; };
-		3F231F39155263E600AD1F1C /* sydapp_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "sydapp_bg@2x.jpg"; path = "../../../../Desktop/synapp/images/sydapp_bg@2x.jpg"; sourceTree = "<group>"; };
+		3F231F3C1552651F00AD1F1C /* sydapp_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "sydapp_bg@2x.jpg"; path = "../../../../Desktop/synapp/images/sydapp_bg@2x.jpg"; sourceTree = "<group>"; };
+		3F231F3D1552651F00AD1F1C /* sydapp_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sydapp_bg.jpg; path = ../../../../Desktop/synapp/images/sydapp_bg.jpg; sourceTree = "<group>"; };
 		A1B008B31335CBF7000D9043 /* SYN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B008B71335CBF7000D9043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1B008B91335CBF7000D9043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -168,9 +168,9 @@
 				3F231F2C15525E0600AD1F1C /* pause_btn2@2x.jpg */,
 				3F231F2D15525E0600AD1F1C /* pause_btn2.jpg */,
 				3F231F3415525F0500AD1F1C /* playbtn2.jpg */,
+				3F231F3C1552651F00AD1F1C /* sydapp_bg@2x.jpg */,
+				3F231F3D1552651F00AD1F1C /* sydapp_bg.jpg */,
 				3F231F3515525F0500AD1F1C /* playbtn2@2x.jpg */,
-				3F231F38155263E600AD1F1C /* sydapp_bg.jpg */,
-				3F231F39155263E600AD1F1C /* sydapp_bg@2x.jpg */,
 				A1B008FF1335DD32000D9043 /* Synradio.jpeg */,
 				3F231F0B155253D800AD1F1C /* Synradio.jpeg */,
 				A1B009001335DD32000D9043 /* Synradio@2x.jpeg */,
@@ -243,8 +243,8 @@
 				3F231F3315525E0700AD1F1C /* pause_btn2.jpg in Resources */,
 				3F231F3615525F0500AD1F1C /* playbtn2.jpg in Resources */,
 				3F231F3715525F0500AD1F1C /* playbtn2@2x.jpg in Resources */,
-				3F231F3A155263E700AD1F1C /* sydapp_bg.jpg in Resources */,
-				3F231F3B155263E700AD1F1C /* sydapp_bg@2x.jpg in Resources */,
+				3F231F3E1552651F00AD1F1C /* sydapp_bg@2x.jpg in Resources */,
+				3F231F3F1552651F00AD1F1C /* sydapp_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
