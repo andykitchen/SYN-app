@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F231F011552198200AD1F1C /* SYNMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F231EFF1552198200AD1F1C /* SYNMessageViewController.xib */; };
 		A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B71335CBF7000D9043 /* UIKit.framework */; };
 		A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B91335CBF7000D9043 /* Foundation.framework */; };
 		A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */; };
@@ -26,10 +27,10 @@
 		A1B009081335DF56000D9043 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B009061335DF56000D9043 /* Icon@2x.png */; };
 		A1EF9CD4133703AD002498A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EF9CD3133703AD002498A2 /* AVFoundation.framework */; };
 		A1F97822140DB222003E7DB8 /* SYNMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */; };
-		A1F97823140DB222003E7DB8 /* SYNMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F97821140DB222003E7DB8 /* SYNMessageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F231F001552198200AD1F1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYNMessageViewController.xib; sourceTree = "<group>"; };
 		A1B008B31335CBF7000D9043 /* SYN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B008B71335CBF7000D9043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1B008B91335CBF7000D9043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,7 +58,6 @@
 		A1EF9CD3133703AD002498A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A1F9781F140DB222003E7DB8 /* SYNMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNMessageViewController.h; sourceTree = "<group>"; };
 		A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNMessageViewController.m; sourceTree = "<group>"; };
-		A1F97821140DB222003E7DB8 /* SYNMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYNMessageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				A1B008CF1335CBF7000D9043 /* SYNViewController.xib */,
 				A1F9781F140DB222003E7DB8 /* SYNMessageViewController.h */,
 				A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */,
-				A1F97821140DB222003E7DB8 /* SYNMessageViewController.xib */,
+				3F231EFF1552198200AD1F1C /* SYNMessageViewController.xib */,
 				A1B008FC1335DD32000D9043 /* Media */,
 				A1B008BE1335CBF7000D9043 /* Supporting Files */,
 			);
@@ -208,7 +208,7 @@
 				A1B009041335DD32000D9043 /* Synradio@2x.jpeg in Resources */,
 				A1B009071335DF56000D9043 /* Icon.png in Resources */,
 				A1B009081335DF56000D9043 /* Icon@2x.png in Resources */,
-				A1F97823140DB222003E7DB8 /* SYNMessageViewController.xib in Resources */,
+				3F231F011552198200AD1F1C /* SYNMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +231,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3F231EFF1552198200AD1F1C /* SYNMessageViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F231F001552198200AD1F1C /* en */,
+			);
+			name = SYNMessageViewController.xib;
+			sourceTree = "<group>";
+		};
 		A1B008C01335CBF7000D9043 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
