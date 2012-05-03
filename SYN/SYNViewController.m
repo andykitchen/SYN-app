@@ -39,7 +39,7 @@
         [[UINavigationController alloc]
             initWithRootViewController:messageViewController];
 
-    navigationController.navigationBar.tintColor = [UIColor redColor];
+    navigationController.navigationBar.tintColor = [[UIColor alloc] initWithRed:0.603 green:0.0 blue:0.603 alpha:1.0];
     messageViewController.delegate = self;
     
     [self presentModalViewController:navigationController animated:YES];

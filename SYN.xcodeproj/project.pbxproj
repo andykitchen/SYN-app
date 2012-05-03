@@ -8,16 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3F231F011552198200AD1F1C /* SYNMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F231EFF1552198200AD1F1C /* SYNMessageViewController.xib */; };
-		3F231F0D155253D800AD1F1C /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F03155253D800AD1F1C /* message.png */; };
-		3F231F0E155253D800AD1F1C /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F04155253D800AD1F1C /* message@2x.png */; };
-		3F231F0F155253D800AD1F1C /* pause_btn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F05155253D800AD1F1C /* pause_btn.jpg */; };
-		3F231F10155253D800AD1F1C /* pause_btn@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F06155253D800AD1F1C /* pause_btn@2x.jpg */; };
-		3F231F11155253D800AD1F1C /* play_btn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F07155253D800AD1F1C /* play_btn.jpg */; };
-		3F231F12155253D800AD1F1C /* play_btn@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F08155253D800AD1F1C /* play_btn@2x.jpg */; };
 		3F231F13155253D800AD1F1C /* sydapp_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F09155253D800AD1F1C /* sydapp_bg.jpg */; };
 		3F231F14155253D800AD1F1C /* sydapp_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F0A155253D800AD1F1C /* sydapp_bg@2x.jpg */; };
 		3F231F15155253D800AD1F1C /* Synradio.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F0B155253D800AD1F1C /* Synradio.jpeg */; };
-		3F231F16155253D800AD1F1C /* Synradio@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F0C155253D800AD1F1C /* Synradio@2x.jpeg */; };
+		3F231F3015525E0700AD1F1C /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F2A15525E0500AD1F1C /* message.png */; };
+		3F231F3115525E0700AD1F1C /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F2B15525E0500AD1F1C /* message@2x.png */; };
+		3F231F3215525E0700AD1F1C /* pause_btn2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F2C15525E0600AD1F1C /* pause_btn2@2x.jpg */; };
+		3F231F3315525E0700AD1F1C /* pause_btn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F2D15525E0600AD1F1C /* pause_btn2.jpg */; };
+		3F231F3615525F0500AD1F1C /* playbtn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F3415525F0500AD1F1C /* playbtn2.jpg */; };
+		3F231F3715525F0500AD1F1C /* playbtn2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F231F3515525F0500AD1F1C /* playbtn2@2x.jpg */; };
 		A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B71335CBF7000D9043 /* UIKit.framework */; };
 		A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B91335CBF7000D9043 /* Foundation.framework */; };
 		A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */; };
@@ -41,16 +40,15 @@
 
 /* Begin PBXFileReference section */
 		3F231F001552198200AD1F1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYNMessageViewController.xib; sourceTree = "<group>"; };
-		3F231F03155253D800AD1F1C /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
-		3F231F04155253D800AD1F1C /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
-		3F231F05155253D800AD1F1C /* pause_btn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pause_btn.jpg; sourceTree = "<group>"; };
-		3F231F06155253D800AD1F1C /* pause_btn@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pause_btn@2x.jpg"; sourceTree = "<group>"; };
-		3F231F07155253D800AD1F1C /* play_btn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = play_btn.jpg; sourceTree = "<group>"; };
-		3F231F08155253D800AD1F1C /* play_btn@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "play_btn@2x.jpg"; sourceTree = "<group>"; };
 		3F231F09155253D800AD1F1C /* sydapp_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sydapp_bg.jpg; sourceTree = "<group>"; };
 		3F231F0A155253D800AD1F1C /* sydapp_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sydapp_bg@2x.jpg"; sourceTree = "<group>"; };
 		3F231F0B155253D800AD1F1C /* Synradio.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Synradio.jpeg; sourceTree = "<group>"; };
-		3F231F0C155253D800AD1F1C /* Synradio@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Synradio@2x.jpeg"; sourceTree = "<group>"; };
+		3F231F2A15525E0500AD1F1C /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = ../../../../Desktop/synapp/images/message.png; sourceTree = "<group>"; };
+		3F231F2B15525E0500AD1F1C /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message@2x.png"; path = "../../../../Desktop/synapp/images/message@2x.png"; sourceTree = "<group>"; };
+		3F231F2C15525E0600AD1F1C /* pause_btn2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pause_btn2@2x.jpg"; path = "../../../../Desktop/synapp/images/pause_btn2@2x.jpg"; sourceTree = "<group>"; };
+		3F231F2D15525E0600AD1F1C /* pause_btn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pause_btn2.jpg; path = ../../../../Desktop/synapp/images/pause_btn2.jpg; sourceTree = "<group>"; };
+		3F231F3415525F0500AD1F1C /* playbtn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = playbtn2.jpg; path = ../../../../Desktop/synapp/images/playbtn2.jpg; sourceTree = "<group>"; };
+		3F231F3515525F0500AD1F1C /* playbtn2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "playbtn2@2x.jpg"; path = "../../../../Desktop/synapp/images/playbtn2@2x.jpg"; sourceTree = "<group>"; };
 		A1B008B31335CBF7000D9043 /* SYN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B008B71335CBF7000D9043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1B008B91335CBF7000D9043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,17 +163,16 @@
 			children = (
 				A1B009051335DF56000D9043 /* Icon.png */,
 				A1B009061335DF56000D9043 /* Icon@2x.png */,
+				3F231F2A15525E0500AD1F1C /* message.png */,
+				3F231F2B15525E0500AD1F1C /* message@2x.png */,
+				3F231F2C15525E0600AD1F1C /* pause_btn2@2x.jpg */,
+				3F231F2D15525E0600AD1F1C /* pause_btn2.jpg */,
+				3F231F3415525F0500AD1F1C /* playbtn2.jpg */,
+				3F231F3515525F0500AD1F1C /* playbtn2@2x.jpg */,
 				A1B008FF1335DD32000D9043 /* Synradio.jpeg */,
-				3F231F03155253D800AD1F1C /* message.png */,
-				3F231F04155253D800AD1F1C /* message@2x.png */,
-				3F231F05155253D800AD1F1C /* pause_btn.jpg */,
-				3F231F06155253D800AD1F1C /* pause_btn@2x.jpg */,
-				3F231F07155253D800AD1F1C /* play_btn.jpg */,
-				3F231F08155253D800AD1F1C /* play_btn@2x.jpg */,
 				3F231F09155253D800AD1F1C /* sydapp_bg.jpg */,
 				3F231F0A155253D800AD1F1C /* sydapp_bg@2x.jpg */,
 				3F231F0B155253D800AD1F1C /* Synradio.jpeg */,
-				3F231F0C155253D800AD1F1C /* Synradio@2x.jpeg */,
 				A1B009001335DD32000D9043 /* Synradio@2x.jpeg */,
 			);
 			path = Media;
@@ -239,16 +236,15 @@
 				A1B009071335DF56000D9043 /* Icon.png in Resources */,
 				A1B009081335DF56000D9043 /* Icon@2x.png in Resources */,
 				3F231F011552198200AD1F1C /* SYNMessageViewController.xib in Resources */,
-				3F231F0D155253D800AD1F1C /* message.png in Resources */,
-				3F231F0E155253D800AD1F1C /* message@2x.png in Resources */,
-				3F231F0F155253D800AD1F1C /* pause_btn.jpg in Resources */,
-				3F231F10155253D800AD1F1C /* pause_btn@2x.jpg in Resources */,
-				3F231F11155253D800AD1F1C /* play_btn.jpg in Resources */,
-				3F231F12155253D800AD1F1C /* play_btn@2x.jpg in Resources */,
 				3F231F13155253D800AD1F1C /* sydapp_bg.jpg in Resources */,
 				3F231F14155253D800AD1F1C /* sydapp_bg@2x.jpg in Resources */,
 				3F231F15155253D800AD1F1C /* Synradio.jpeg in Resources */,
-				3F231F16155253D800AD1F1C /* Synradio@2x.jpeg in Resources */,
+				3F231F3015525E0700AD1F1C /* message.png in Resources */,
+				3F231F3115525E0700AD1F1C /* message@2x.png in Resources */,
+				3F231F3215525E0700AD1F1C /* pause_btn2@2x.jpg in Resources */,
+				3F231F3315525E0700AD1F1C /* pause_btn2.jpg in Resources */,
+				3F231F3615525F0500AD1F1C /* playbtn2.jpg in Resources */,
+				3F231F3715525F0500AD1F1C /* playbtn2@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
