@@ -28,15 +28,19 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>audio</string>
-	</array>
+	<key>SYNStreamURL</key>
+	<string>http://syn.gravityrail.net:8000/syn</string>
+	<key>SYNMessageURL</key>
+	<string>http://localhost:3000/sink/message</string>
 </dict>
 </plist>
