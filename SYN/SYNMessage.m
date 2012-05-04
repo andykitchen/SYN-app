@@ -8,6 +8,16 @@
 
 #import "SYNMessage.h"
 
+// Encode a string to embed in an URL.
+NSString* encodeToPercentEscapeString(NSString *string) {
+    return (NSString *)
+    CFURLCreateStringByAddingPercentEscapes(NULL,
+                                              (CFStringRef) string,
+                                              NULL,
+                                              (CFStringRef) @"!*'();:@&=+$,/?%#[]",
+                                              kCFStringEncodingUTF8);
+}
+
 
 @implementation SYNMessage
 
@@ -38,9 +48,18 @@
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
+    [request addValue:@"application/json, text/javascript, */*" forHTTPHeaderField:@"Accept"];
+    [request addValue:@"XMLHttpRequest" forHTTPHeaderField:@"X-Requested-With"];
+
+    NSString *escapedMessageBody = encodeToPercentEscapeString(messageBody);
+    NSString *postBody = [NSString stringWithFormat:
+        @"form_id=syn_sms_form&op=Send+Message&sms-message=%@",
+            escapedMessageBody];
     
-    [request setHTTPBody:[@"Test Body" dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:[postBody dataUsingEncoding:NSUTF8StringEncoding]];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
+    [escapedMessageBody release];
     
     if(connection) {
         responseData = [[NSMutableData alloc] init];
@@ -49,6 +68,7 @@
         return;
     }
 }
+
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     [responseData setLength:0];
@@ -56,12 +76,15 @@
     int statusCode = [((NSHTTPURLResponse *)response) statusCode];
     if (statusCode >= 400) {
         [connection cancel];
+
+        NSString *errorDescription =
+          [NSString stringWithFormat:
+             NSLocalizedString(@"Server returned status code %d",@""),
+             statusCode];
+        
         NSDictionary *errorInfo
         = [NSDictionary dictionaryWithObjectsAndKeys:
-           [NSString
-              stringWithFormat:
-                NSLocalizedString(@"Server returned status code %d",@""),
-              statusCode],
+            errorDescription,
             NSLocalizedDescriptionKey,
             
             [response URL],

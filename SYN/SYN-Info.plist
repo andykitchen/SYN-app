@@ -41,6 +41,6 @@
 	<key>SYNStreamURL</key>
 	<string>http://syn.gravityrail.net:8000/syn</string>
 	<key>SYNMessageURL</key>
-	<string>http://localhost:3000/sink/message</string>
+	<string>http://syn.org.au/</string>
 </dict>
 </plist>
