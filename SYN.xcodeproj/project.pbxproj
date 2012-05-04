@@ -12,6 +12,7 @@
 		A18B65FA1553D00400D4C60A /* sydapp_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A18B65F81553D00400D4C60A /* sydapp_bg.jpg */; };
 		A18B65FE1553D4E900D4C60A /* pausebtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B65FD1553D4E900D4C60A /* pausebtn2.png */; };
 		A18B66001553DB6D00D4C60A /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B65FF1553DB6D00D4C60A /* message.png */; };
+		A18B66061553E93300D4C60A /* SYNMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B66051553E93300D4C60A /* SYNMessage.m */; };
 		A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B71335CBF7000D9043 /* UIKit.framework */; };
 		A1B008BA1335CBF7000D9043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B91335CBF7000D9043 /* Foundation.framework */; };
 		A1B008BC1335CBF7000D9043 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008BB1335CBF7000D9043 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 		A18B65F81553D00400D4C60A /* sydapp_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sydapp_bg.jpg; sourceTree = "<group>"; };
 		A18B65FD1553D4E900D4C60A /* pausebtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtn2.png; sourceTree = "<group>"; };
 		A18B65FF1553DB6D00D4C60A /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		A18B66041553E93300D4C60A /* SYNMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYNMessage.h; path = SYN.xcodeproj/SYNMessage.h; sourceTree = SOURCE_ROOT; };
+		A18B66051553E93300D4C60A /* SYNMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYNMessage.m; path = SYN.xcodeproj/SYNMessage.m; sourceTree = SOURCE_ROOT; };
 		A1B008B31335CBF7000D9043 /* SYN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B008B71335CBF7000D9043 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1B008B91335CBF7000D9043 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				A1F9781F140DB222003E7DB8 /* SYNMessageViewController.h */,
 				A1F97820140DB222003E7DB8 /* SYNMessageViewController.m */,
 				3F231EFF1552198200AD1F1C /* SYNMessageViewController.xib */,
+				A18B66041553E93300D4C60A /* SYNMessage.h */,
+				A18B66051553E93300D4C60A /* SYNMessage.m */,
 				A1B008FC1335DD32000D9043 /* Media */,
 				A1B008BE1335CBF7000D9043 /* Supporting Files */,
 			);
@@ -241,6 +246,7 @@
 				A1B008DB1335CCCA000D9043 /* AudioStreamer.m in Sources */,
 				A1B008DC1335CCCA000D9043 /* UIDevice+Hardware.m in Sources */,
 				A1F97822140DB222003E7DB8 /* SYNMessageViewController.m in Sources */,
+				A18B66061553E93300D4C60A /* SYNMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

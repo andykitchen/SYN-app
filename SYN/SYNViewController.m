@@ -8,6 +8,7 @@
 
 #import "SYNViewController.h"
 
+#import "SYNMessage.h"
 #import "AudioStreamer.h"
 
 @implementation SYNViewController
@@ -109,9 +110,12 @@
     [self dismissModalViewControllerAnimated:YES];
 }
      
- - (void)sendMessage:(NSString *)message
+ - (void)sendMessage:(NSString *)messageStr
 {
-    NSLog(@"%@", message);
+    SYNMessage *message = [[SYNMessage alloc] initWithString:messageStr];
+    [message send];
+    [message release];
+    
     [self dismissModalViewControllerAnimated:YES];
 }
 
