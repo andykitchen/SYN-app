@@ -14,14 +14,19 @@
 
 @interface SYNViewController : UIViewController <SYNMessageDelegate> {
     AudioStreamer *streamer;
-    UILabel *statusLabel;
+    UIImageView *pauseImage;
+    UIImageView *playImage;
+    UIButton *playPauseButton;
 }
-
-@property (nonatomic, retain) IBOutlet UILabel *statusLabel;
+@property (nonatomic, retain) IBOutlet UIButton *playPauseButton;
+@property (nonatomic, retain) IBOutlet UIImageView *pauseImage;
+@property (nonatomic, retain) IBOutlet UIImageView *playImage;
 
 - (IBAction)togglePlayPause;
 
 - (void)cancelMessage;
 - (void)sendMessage:(NSString *)message;
+- (void)playing;
+- (void)paused;
 
 @end

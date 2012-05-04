@@ -11,7 +11,9 @@
 #import "AudioStreamer.h"
 
 @implementation SYNViewController
-@synthesize statusLabel;
+@synthesize playPauseButton;
+@synthesize pauseImage;
+@synthesize playImage;
 
 
 - (void)didReceiveMemoryWarning
@@ -39,7 +41,7 @@
         [[UINavigationController alloc]
             initWithRootViewController:messageViewController];
 
-    navigationController.navigationBar.tintColor = [[UIColor alloc] initWithRed:0.603 green:0.0 blue:0.603 alpha:1.0];
+    navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.603 green:0.0 blue:0.603 alpha:1.0];
     messageViewController.delegate = self;
     
     [self presentModalViewController:navigationController animated:YES];
@@ -65,17 +67,27 @@
 - (void)playbackStateChanged:(NSNotification*)notification
 {
     if ([streamer isWaiting]) {
-        self.statusLabel.text = @"Connecting...";
+        [self playing];
 	}
 	else if ([streamer isPlaying]) {
-        self.statusLabel.text = @"Playing...";
+        [self playing];
 	}
 	else if ([streamer isPaused]) {
-        self.statusLabel.text = @"Paused...";
+        [self paused];
 	}
 	else if ([streamer isIdle]) {
-        self.statusLabel.text = @"Idle...";
+        [self paused];
 	}
+}
+
+- (void)playing
+{
+    [self.playPauseButton setBackgroundImage:pauseImage.image forState:UIControlStateNormal];
+}
+
+- (void)paused
+{
+    [self.playPauseButton setBackgroundImage:playImage.image forState:UIControlStateNormal];
 }
 
 - (void)cancelMessage
@@ -110,6 +122,15 @@
          object:streamer];
 
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    
+    if (self.playImage == Nil) {
+        UIImage *playImageIcon = [playPauseButton backgroundImageForState:UIControlStateNormal];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:playImageIcon];
+        self.playImage = imageView;
+        [imageView release];
+    }
+    
+    [self playing];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -134,16 +155,14 @@
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
- 
     [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
 
+    [self setPauseImage:nil];
+    [self setPlayImage:nil];
     [streamer release];
 
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-    
-    self.statusLabel = nil;
+    [self setPlayPauseButton:nil];
+    [super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -152,4 +171,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [pauseImage release];
+    [playImage  release];
+    [playPauseButton release];
+    [super dealloc];
+}
 @end
