@@ -14,6 +14,7 @@
 @synthesize playPauseButton;
 @synthesize pauseImage;
 @synthesize playImage;
+@synthesize activityIndicator;
 
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +68,7 @@
 - (void)playbackStateChanged:(NSNotification*)notification
 {
     if ([streamer isWaiting]) {
-        [self playing];
+        [self waiting];
 	}
 	else if ([streamer isPlaying]) {
         [self playing];
@@ -80,14 +81,25 @@
 	}
 }
 
+- (void)waiting
+{
+    [self.activityIndicator startAnimating];
+    [self setButtonImage:self.playImage];
+}
+
 - (void)playing
 {
-    [self.playPauseButton setBackgroundImage:pauseImage.image forState:UIControlStateNormal];
+    [self.activityIndicator stopAnimating];
+    [self setButtonImage:self.pauseImage];
 }
 
 - (void)paused
 {
-    [self.playPauseButton setBackgroundImage:playImage.image forState:UIControlStateNormal];
+    [self setButtonImage:self.playImage];
+}
+
+- (void)setButtonImage:(UIImageView*)imageView {
+    [self.playPauseButton setBackgroundImage:imageView.image forState:UIControlStateNormal];
 }
 
 - (void)cancelMessage
@@ -131,6 +143,7 @@
     }
     
     [self playing];
+    [self.activityIndicator startAnimating];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -162,6 +175,7 @@
     [streamer release];
 
     [self setPlayPauseButton:nil];
+    [self setActivityIndicator:nil];
     [super viewDidUnload];
 }
 
@@ -175,6 +189,7 @@
     [pauseImage release];
     [playImage  release];
     [playPauseButton release];
+    [activityIndicator release];
     [super dealloc];
 }
 @end

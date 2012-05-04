@@ -16,17 +16,22 @@
     AudioStreamer *streamer;
     UIImageView *pauseImage;
     UIImageView *playImage;
+    UIActivityIndicatorView *activityIndicator;
     UIButton *playPauseButton;
 }
 @property (nonatomic, retain) IBOutlet UIButton *playPauseButton;
 @property (nonatomic, retain) IBOutlet UIImageView *pauseImage;
 @property (nonatomic, retain) IBOutlet UIImageView *playImage;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 - (IBAction)togglePlayPause;
 
 - (void)cancelMessage;
 - (void)sendMessage:(NSString *)message;
+
+- (void)waiting;
 - (void)playing;
 - (void)paused;
+- (void)setButtonImage:(UIImageView*)imageView;
 
 @end
