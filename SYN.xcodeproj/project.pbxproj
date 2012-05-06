@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3F231F011552198200AD1F1C /* SYNMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F231EFF1552198200AD1F1C /* SYNMessageViewController.xib */; };
-		A18B65F91553D00400D4C60A /* playbtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B65F71553D00400D4C60A /* playbtn2.png */; };
-		A18B65FA1553D00400D4C60A /* sydapp_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A18B65F81553D00400D4C60A /* sydapp_bg.jpg */; };
-		A18B65FE1553D4E900D4C60A /* pausebtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B65FD1553D4E900D4C60A /* pausebtn2.png */; };
+		A10809001556BB4A00A4D709 /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A10808FF1556BB4A00A4D709 /* message@2x.png */; };
+		A10809041556BB6500A4D709 /* pause_btn2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A10809021556BB6500A4D709 /* pause_btn2@2x.jpg */; };
+		A10809051556BB6500A4D709 /* playbtn2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A10809031556BB6500A4D709 /* playbtn2@2x.jpg */; };
+		A10809081556BB8000A4D709 /* pause_btn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A10809061556BB8000A4D709 /* pause_btn2.jpg */; };
+		A10809091556BB8000A4D709 /* playbtn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A10809071556BB8000A4D709 /* playbtn2.jpg */; };
+		A108090B1556BBA500A4D709 /* synapp_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A108090A1556BBA500A4D709 /* synapp_bg@2x.jpg */; };
+		A108090D1556BBA900A4D709 /* synapp_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A108090C1556BBA900A4D709 /* synapp_bg.jpg */; };
 		A18B66001553DB6D00D4C60A /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = A18B65FF1553DB6D00D4C60A /* message.png */; };
 		A18B66091553FE0D00D4C60A /* SYNMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A18B66081553FE0D00D4C60A /* SYNMessage.m */; };
 		A1B008B81335CBF7000D9043 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B008B71335CBF7000D9043 /* UIKit.framework */; };
@@ -36,9 +40,13 @@
 
 /* Begin PBXFileReference section */
 		3F231F001552198200AD1F1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYNMessageViewController.xib; sourceTree = "<group>"; };
-		A18B65F71553D00400D4C60A /* playbtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbtn2.png; sourceTree = "<group>"; };
-		A18B65F81553D00400D4C60A /* sydapp_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sydapp_bg.jpg; sourceTree = "<group>"; };
-		A18B65FD1553D4E900D4C60A /* pausebtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtn2.png; sourceTree = "<group>"; };
+		A10808FF1556BB4A00A4D709 /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
+		A10809021556BB6500A4D709 /* pause_btn2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pause_btn2@2x.jpg"; sourceTree = "<group>"; };
+		A10809031556BB6500A4D709 /* playbtn2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "playbtn2@2x.jpg"; sourceTree = "<group>"; };
+		A10809061556BB8000A4D709 /* pause_btn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pause_btn2.jpg; sourceTree = "<group>"; };
+		A10809071556BB8000A4D709 /* playbtn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = playbtn2.jpg; sourceTree = "<group>"; };
+		A108090A1556BBA500A4D709 /* synapp_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "synapp_bg@2x.jpg"; sourceTree = "<group>"; };
+		A108090C1556BBA900A4D709 /* synapp_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = synapp_bg.jpg; sourceTree = "<group>"; };
 		A18B65FF1553DB6D00D4C60A /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
 		A18B66071553FE0D00D4C60A /* SYNMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYNMessage.h; sourceTree = "<group>"; };
 		A18B66081553FE0D00D4C60A /* SYNMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYNMessage.m; sourceTree = "<group>"; };
@@ -157,9 +165,13 @@
 			isa = PBXGroup;
 			children = (
 				A18B65FF1553DB6D00D4C60A /* message.png */,
-				A18B65F71553D00400D4C60A /* playbtn2.png */,
-				A18B65FD1553D4E900D4C60A /* pausebtn2.png */,
-				A18B65F81553D00400D4C60A /* sydapp_bg.jpg */,
+				A10808FF1556BB4A00A4D709 /* message@2x.png */,
+				A10809061556BB8000A4D709 /* pause_btn2.jpg */,
+				A10809021556BB6500A4D709 /* pause_btn2@2x.jpg */,
+				A10809071556BB8000A4D709 /* playbtn2.jpg */,
+				A10809031556BB6500A4D709 /* playbtn2@2x.jpg */,
+				A108090C1556BBA900A4D709 /* synapp_bg.jpg */,
+				A108090A1556BBA500A4D709 /* synapp_bg@2x.jpg */,
 				A1B009051335DF56000D9043 /* Icon.png */,
 				A1B009061335DF56000D9043 /* Icon@2x.png */,
 				A1B008FF1335DD32000D9043 /* Synradio.jpeg */,
@@ -226,10 +238,14 @@
 				A1B009071335DF56000D9043 /* Icon.png in Resources */,
 				A1B009081335DF56000D9043 /* Icon@2x.png in Resources */,
 				3F231F011552198200AD1F1C /* SYNMessageViewController.xib in Resources */,
-				A18B65F91553D00400D4C60A /* playbtn2.png in Resources */,
-				A18B65FA1553D00400D4C60A /* sydapp_bg.jpg in Resources */,
-				A18B65FE1553D4E900D4C60A /* pausebtn2.png in Resources */,
 				A18B66001553DB6D00D4C60A /* message.png in Resources */,
+				A10809001556BB4A00A4D709 /* message@2x.png in Resources */,
+				A10809041556BB6500A4D709 /* pause_btn2@2x.jpg in Resources */,
+				A10809051556BB6500A4D709 /* playbtn2@2x.jpg in Resources */,
+				A10809081556BB8000A4D709 /* pause_btn2.jpg in Resources */,
+				A10809091556BB8000A4D709 /* playbtn2.jpg in Resources */,
+				A108090B1556BBA500A4D709 /* synapp_bg@2x.jpg in Resources */,
+				A108090D1556BBA900A4D709 /* synapp_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
