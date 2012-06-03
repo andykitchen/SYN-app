@@ -12,6 +12,7 @@
 
 #import <AVFoundation/AVAudioSession.h>
 
+#import "SBJson.h"
 
 @implementation SYNAppDelegate
 
@@ -20,7 +21,7 @@
 @synthesize viewController=_viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{    
 	[[NSThread currentThread] setName:@"Main Thread"];
      
     self.window.rootViewController = self.viewController;

@@ -8,6 +8,8 @@
 
 #import "SYNMessage.h"
 
+#import "SBJson.h"
+
 // Encode a string to embed in an URL.
 NSString* encodeToPercentEscapeString(NSString *string) {
     return (NSString *)
@@ -33,6 +35,18 @@ NSString* encodeToPercentEscapeString(NSString *string) {
         messageBody = inMessageBody;
     }
     return self;
+}
+
+- (void)presentAlertWithTitle:(NSString*)title message:(NSString*)message
+{
+    UIAlertView *alert = [[[UIAlertView alloc]
+                           initWithTitle:title
+                           message:message
+                           delegate:nil
+                           cancelButtonTitle:NSLocalizedString(@"OK", @"")
+                           otherButtonTitles: nil]
+                          autorelease];
+    [alert show];
 }
 
 - (void) send
@@ -113,13 +127,41 @@ NSString* encodeToPercentEscapeString(NSString *string) {
     NSLog(@"error: sending message -- %@ %@",
           [error localizedDescription],
           [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+
+    [self presentAlertWithTitle:@"Error" message:@"couldn't send message, please try later"];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSLog(@"message response: %@",
-      [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+    NSString *jsonStr = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     
+    NSLog(@"message response: %@", jsonStr);
+
+    SBJsonParser *parser        = [[SBJsonParser alloc] init];
+    NSDictionary *resposeJson   = [parser objectWithString:jsonStr];
+
+    NSLog(@"message parsed:   %@", resposeJson);
+
+    NSArray      *messages_status  = [resposeJson valueForKey:@"messages_status"];
+    NSArray      *messages_error   = [resposeJson valueForKey:@"messages_error"];
+    
+    NSString *title = @"";
+    NSDictionary *message;
+    if([messages_error count] > 0) {
+        title = @"SYN Error";
+        message = [messages_error  objectAtIndex:0];
+    } else {
+        title = @"SYN";
+        message = [messages_status objectAtIndex:0];        
+    }
+    
+    NSString     *message_value = [message valueForKey:@"value"];
+    
+    [self presentAlertWithTitle:title message:message_value];
+
+    [parser release];
+    [resposeJson release];
+    [jsonStr release];
     [connection release];
     [responseData release];
 }
