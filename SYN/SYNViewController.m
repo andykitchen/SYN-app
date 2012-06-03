@@ -30,7 +30,15 @@
 
 - (IBAction)togglePlayPause
 {
-    [streamer pause];
+    if([streamer isIdle]) {
+        NSLog(@"reinit streamer");
+        [streamer release];
+        [self initStreamer];
+    } 
+    else {
+        NSLog(@"toggle play/pause");
+        [streamer pause];
+    }
 }
 
 - (IBAction)sendStudioMessage
@@ -71,17 +79,25 @@
 - (void)playbackStateChanged:(NSNotification*)notification
 {
     if ([streamer isWaiting]) {
+        NSLog(@"waiting...");
         [self waiting];
 	}
 	else if ([streamer isPlaying]) {
+        NSLog(@"playing...");
         [self playing];
 	}
 	else if ([streamer isPaused]) {
+        NSLog(@"paused...");
         [self paused];
 	}
 	else if ([streamer isIdle]) {
+        NSLog(@"idle...");
         [self paused];
 	}
+    else {
+        NSLog(@"unknown: %d", streamer.state);
+        [self paused];
+    }
 }
 
 - (void)waiting
@@ -98,11 +114,12 @@
 
 - (void)paused
 {
+    [self.activityIndicator stopAnimating];
     [self setButtonImage:self.playImage];
 }
 
 - (void)setButtonImage:(UIImageView*)imageView {
-    [self.playPauseButton setBackgroundImage:imageView.image forState:UIControlStateNormal];
+    [self.playPauseButton setImage:imageView.image forState:UIControlStateNormal];
 }
 
 - (void)cancelMessage
@@ -122,11 +139,8 @@
 
 #pragma mark - View lifecycle
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
+- (void)initStreamer
 {
-    [super viewDidLoad];
-    
     NSString* urlString = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"SYNStreamURL"];
     if (urlString == Nil) {
         NSLog(@"error: SYNStreamURL key not found in info.plist");
@@ -138,6 +152,14 @@
     [url release];
     
     [streamer start];
+}
+                    
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    [self initStreamer];
     
     [[NSNotificationCenter defaultCenter]
          addObserver:self
@@ -148,7 +170,7 @@
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     
     if (self.playImage == Nil) {
-        UIImage *playImageIcon = [playPauseButton backgroundImageForState:UIControlStateNormal];
+        UIImage *playImageIcon = [playPauseButton imageForState:UIControlStateNormal];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:playImageIcon];
         self.playImage = imageView;
         [imageView release];

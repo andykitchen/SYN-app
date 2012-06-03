@@ -26,6 +26,8 @@
 
 - (IBAction)togglePlayPause;
 
+- (void)initStreamer;
+
 - (void)cancelMessage;
 - (void)sendMessage:(NSString *)message;
 

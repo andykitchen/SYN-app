@@ -225,7 +225,6 @@ void ASReadStreamCallBack
 @implementation AudioStreamer
 
 @synthesize errorCode;
-@synthesize state;
 @synthesize stopReason;
 @synthesize bitRate;
 @synthesize httpHeaders;
@@ -445,8 +444,8 @@ void ASReadStreamCallBack
 			AudioQueueStop(audioQueue, true);
 		}
 
-		[self presentAlertWithTitle:NSLocalizedStringFromTable(@"File Error", @"Errors", nil)
-							message:NSLocalizedStringFromTable(@"Unable to configure network read stream.", @"Errors", nil)];
+		[self presentAlertWithTitle:NSLocalizedStringFromTable(@"Wow Oops!", @"Errors", nil)
+							message:NSLocalizedStringFromTable(@"Something totally went wrong, are you like, still conneted to the intenet?", @"Errors", nil)];
 	}
 }
 
@@ -497,6 +496,14 @@ void ASReadStreamCallBack
 			}
 		}
 	}
+}
+
+- (AudioStreamerState)state
+{
+    @synchronized(self)
+    {
+        return state;
+    }
 }
 
 //
@@ -796,7 +803,7 @@ void ASReadStreamCallBack
 			if (state != AS_STOPPING &&
 				state != AS_STOPPED)
 			{
-				NSLog(@"### Not starting audio thread. State code is: %ld", state);
+				NSLog(@"### Not starting audio thread. State code is: %u", state);
 			}
 			self.state = AS_INITIALIZED;
 			[pool release];
