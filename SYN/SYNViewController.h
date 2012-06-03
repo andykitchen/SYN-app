@@ -25,6 +25,7 @@
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 - (IBAction)togglePlayPause;
+- (void)stopIfPaused;
 
 - (void)initStreamer;
 

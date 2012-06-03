@@ -41,6 +41,14 @@
     }
 }
 
+- (void)stopIfPaused
+{
+    if([streamer isPaused]) {
+        [streamer stop];
+        [self.activityIndicator stopAnimating];
+    }
+}
+
 - (IBAction)sendStudioMessage
 {
     SYNMessageViewController *messageViewController =
@@ -103,7 +111,7 @@
 - (void)waiting
 {
     [self.activityIndicator startAnimating];
-    [self setButtonImage:self.playImage];
+    //[self setButtonImage:self.playImage];
 }
 
 - (void)playing
